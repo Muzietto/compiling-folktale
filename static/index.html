@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <script src="./lodash.js"></script>
+  <script src="../dist/webpack-numbers.js"></script>
+  <script>
+    // Global variable
+    const globalized = webpackNumbers.wordToNum('Five');
+    console.log(`globalized=${globalized}`);
+
+    // Property in the window object
+    const windowized = window.webpackNumbers.wordToNum('Five');
+    console.log(`windowized=${windowized}`);
+  </script>
+</html>
