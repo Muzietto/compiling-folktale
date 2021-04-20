@@ -4,8 +4,7 @@ Sample creation of webpack bundle containing a standalone Folktale library file
 ## main branch
 - install dependencies with npm
 - copy the content of file `doc/copy-documentation.js` into `node_modules/folktale/helpers/copy-documentation.js`
-- compile library with `npx webpack`
-- produced library file is `dist/folktale.js`
+- compile library with `npx webpack`; produced library file is `dist/folktale.js`
 - example utilization: serve `static/index.html` with [http-server](https://www.npmjs.com/package/http-server) and open the browser webtools
 
 ## branch webpack-numbers
