@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <script src="../dist/folktale.js"></script>
+  <script>
+
+  const { maybe: Maybe, core : Core } = folktale;
+
+    const inc = x => x + 1;
+    const double = x => x * 2;
+
+    // Global variable
+    const globalized = Maybe.Just(1).map(Core.lambda.compose(double, inc));
+    console.log(`globalized=${globalized}`);
+
+    // Property in the window object
+    const windowized = window.folktale.maybe.Just(1).map(window.folktale.core.lambda.compose(double, inc));
+    console.log(`windowized=${windowized}`);
+  </script>
+</html>
